@@ -1,0 +1,32 @@
+= How to: Crear un repositorio de apuntes con LaTex exitoso
+
+== Incluir un README
+
+Puntos a incluir:
+
+* Qué es el repositorio
+
+* Qué licencia tiene
+
+* Si se aceptan contribuciones y cómo se puede contribuir
+
+* Cómo hacer uso del repositorio
+
+Si es un repositorio de apuntes,
+deberíamos incluir el comando con el que se compilan esos apuntes.
+
+Ejemplo:
+
+https://github.com/edumart-um/alf-python
+
+== Incluir un archivo CONTRIBUTING
+
+Puede sustituir o expandir los comentarios de las contribuciones que se
+hagan al proyecto.
+
+== Si se esperan contribuciones de mucha gente, añadir una guía de estilo
+
+¿Cómo debería estar escrito el código LaTex?
+Lo ideal es basarse en alguna guía ya escrita.
+Desafortunadamente, no hay grandes guías de estilo de LaTex públicas.
+Podría ser un proyecto a seguir.

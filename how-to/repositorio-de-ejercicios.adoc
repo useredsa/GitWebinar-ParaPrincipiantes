@@ -1,0 +1,66 @@
+= How-to: Repositorio de ejercicios en LaTex
+
+== Definir una estructura para el repositorio
+
+Lo más importante va a ser dejar claro cómo se almancenan los códigos de cada ejercicio.
+Por ejemplo, puede haber una carpeta ejercicios dentro de la cual
+haya una carpeta diferente por cada ejercicio.
+Debe especificarse también si las imágenes tienen que ir en una carpeta específica
+o no necesariamente
+y si se se prefiere que todo el código de un ejercicio esté en un mismo fichero
+o no se aconseja.
+
+O a lo mejor es obligatorio separarlo en preámbulo y contenidos
+y compilamos cada ejercicio con un preámbulo común a todos.
+Sea como fuere, nadie va a saber por ciencia infusa si hay que seguir alguna regla.
+A lo mejor se puede deducir cuando haya 100 ejercicios en el repositorio
+con el mismo formato;
+pero entonces ya nos podremos dar por satisfechos.
+
+== Añadir un fichero de clase LaTex en el que se basen los ejercicios.
+
+Es recomendable para que todos los ejercicios generen un PDF
+con una apariencia similar.
+Además, si se da un fichero de ejemplo que utilice esa clase,
+los alumnos que no sepan LaTex pueden copiarlo,
+resolver un ejercicio cambiando lo mínimo necesario y subirlo.
+
+== Explicar cómo hacer un pull request en la plataforma en la que esté el repositorio
+
+No hay que poner en cada repositorio una explicación que puede quedar desactualizada
+sobre cómo hacer un pull request en GitHub, GitLab o la plataforma que utilicemos.
+En su lugar, lo que debemos incluir es un enlace a una página web donde lo ponga,
+por si alguien no lo sabe.
+Lo más normal es que la plataforma que utilices tenga sus propias páginas de tutoriales.
+
+== Añadir una licencia permisiva y reconocer la autoría de los documentos
+
+Tener una licencia es indispensable para colaborar, como ya hemos explicado.
+Para un repositorio de ejercicios, lo ideal sería tener una licencia
+completamente OpenSource y que sea un proyecto del que todos nos beneficiemos.
+
+No obstante, aunque el repositorio pueda ser público,
+deberíamos incluir en nuestra plantilla un lugar donde poner el autor
+(o autores, hay que considerar que puedan ser 2 o más)
+de la solución del ejercicio.
+Normalmente, los alumnos de universidad van a sentirse atraídos por colaborar
+si saben que hacen algo útil (un favor a futuros alumnos) pero también
+si ven su nombre colocado y pueden sentirse orgullosos.
+
+Aun así, habrá que explicar que los documentos pueden ser requeridos de
+modificaciones antes de ser aceptados y que en el futuro pueden aceptarse
+cambios para las soluciones,
+pero que siempre se mantendrá en la historia del proyecto al autor original
+y que aunque se haga una versión completamente nueva del mismo fichero,
+siempre se citará a los autores antiguos.
+
+== Añadir un archivo `.gitignore` que dificulte que se suban los archivos `.log` y demás
+
+Hay que pensar que pueden contribuir personas que no sepan utilizar bien Git
+o que lo utilicen con una interfaz gráfica que no muestre lo que están subiendo.
+Cuando vayan a hacer su pull request, podremos ver qué suben y
+les podemos comentar que no hay que subir esos archivos;
+pero si incluímos un fichero `.gitignore` que obvie esos archivos por defecto
+vamos a ahorrarnos eso
+y además a ellos les causará la sensación de que es más fácil contribuir.
+
