@@ -1,0 +1,34 @@
+= Tutorial sobre Git
+
+== Glosario de términos
+
+== Material
+
+Una carpeta proporcionada por el ponente que contiene varias subcarpetas
+con cambios que corresponderían a varios commits.
+
+== Ejercicio número 1
+
+. Clonamos el repositorio <url>
+
+. Abrimos la carpeta y realizamos cambios sobre el repositorio
+utilizando los fichero de la carpeta `commit1`.
+
+.. Cambiamos el archivo <tutorial.tex> por el archivo <commit1/tutorial.tex>
+
+.. Añadimos el archivo <glosario.tex> desde <commit1/glosario.tex>
+
+. Hacemos un commit con el mensaje: `Añadido glosario de términos`.
+
+. Creamos un repositorio online con la cuenta que hayamos creado
+en GitHub/GitLab/Otro.
+
+(Empieza lo difícil.)
+
+. Añadimos el repositorio remoto a nuestro repositorio local.
+En la terminal: `git remote add <remote_name> <remote_url>` con el nombre que queramos.
+En una interfaz gráfica: Habrá que buscar en el menú.
+
+. Subimos la historia del repositorio a nuestro repositorio online.
+
+
