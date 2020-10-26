@@ -100,7 +100,7 @@ seleccionar solo los cambios sobre unos archivos para el próximo \textit{commit
 \end{frame}
 
 \begin{frame}\frametitle{\textit{Merge}}
-Una operación merge incorpora los cambios
+Una operación \textit{merge} incorpora los cambios
 de un commit de otra rama del proyecto
 en la rama actual
 como si los cambios hechos sobre la otra rama desde el punto en el que divergieron
@@ -115,7 +115,38 @@ Pero si existen dos versiones modificadas del mismo archivo,
 es posible que los cambios puedan incorporarse de forma automática o que no.
 Cuando pasa lo segundo, se dice que se ha producido un conflicto,
 y los usuarios debemos decidir cómo mezclar ambas versiones
-para terminar la operación merge.
+para terminar la operación \textit{merge}.
+\end{frame}
+
+\defverbatim[colored]\makeset{
+\scriptsize
+\begin{minted}{latex}
+<<<<<<< HEAD
+    c(θ) + \qty\Big(\cos(\frac{3π}{2}-θ), \sin(\frac{3π}{2}-θ)) =
+    \qty\Big(\text{using } \cos ρ = \sin(ρ + \frac{π}{2})) = \\
+    c(θ) + \qty\Big(\sin(2π-θ), \cos(\frac{π}{2}-θ)) =
+    \qty\Big(\text{using } \sin -ρ = -\sin ρ) = \\
+    c(θ) + \qty\Big(-\sin θ, \cos(\frac{π}{2}-θ)) =
+    \qty\Big(\text{using } -\cos ρ = \cos(\frac{π}{2}-ρ)) = \\
+    c(θ) + \qty\Big(-\sin θ, -\cos(θ)) =
+    \qty\Big(θ, 1) + \qty\Big(-\sin θ, -\cos θ) = \\
+=======
+    \begin{split}
+        c(θ) + \qty\Big(\cos(\frac{3π}{2}-θ), \sin(\frac{3π}{2}-θ)) =
+        & \qty\Big(\text{using } \cos(ρ - \frac{π}{2}) = \ \; \sin ρ) = \\
+        c(θ) + \qty\Big(\sin(2π-θ), \cos(\frac{π}{2}-θ)) =
+        & \qty\Big(\text{using } \sin\Big(-ρ\Big) \ \,  = -\sin ρ) = \\
+        c(θ) + \qty\Big(-\sin θ, \cos(\frac{π}{2}-θ)) =
+        & \qty\Big(\text{using } \cos(\frac{π}{2}-ρ) = -\cos ρ) = \\
+        c(θ) + \qty\Big(-\sin θ, -\cos(θ)) =
+        & \qty\Big(θ, 1) + \qty\Big(-\sin θ, -\cos θ) = \\
+    \end{split} \\
+>>>>>>> v1
+\end{minted}
+}
+
+\begin{frame}[fragile]\frametitle{Conflicto}
+\makeset
 \end{frame}
 
 \begin{frame}\frametitle{
