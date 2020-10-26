@@ -1,7 +1,5 @@
 = Tutorial sobre Git
 
-== Glosario de términos
-
 == Material
 
 Una carpeta proporcionada por el ponente que contiene varias subcarpetas
@@ -9,14 +7,15 @@ con cambios que corresponderían a varios commits.
 
 == Ejercicio número 1
 
-. Clonamos el repositorio <url>
+. Clonamos el repositorio https://github.com/useredsa/GitWebinar-ParaPrincipiantes-Ejercicio1
 
-. Abrimos la carpeta y realizamos cambios sobre el repositorio
+. Abrimos la carpeta proporcionada y realizamos cambios sobre el repositorio
 utilizando los fichero de la carpeta `commit1`.
 
-.. Cambiamos el archivo <tutorial.tex> por el archivo <commit1/tutorial.tex>
+.. Cambiamos el archivo `tutorial.adoc` por el archivo `commit1/tutorial.adoc`
 
-.. Añadimos el archivo <glosario.tex> desde <commit1/glosario.tex>
+.. Añadimos el archivo `glosarios/glosario-ejercicio1.pdf`
+que encontraremos en `commit1/glosarios/glosario-ejercicio1.pdf`
 
 . Hacemos un commit con el mensaje: `Añadido glosario de términos`.
 
@@ -31,4 +30,36 @@ En una interfaz gráfica: Habrá que buscar en el menú.
 
 . Subimos la historia del repositorio a nuestro repositorio online.
 
+== Ejercicio número 2
+
+Intentamos replicar la historia de la imagen `ejercicio2/objetivo.png` en
+http://git-school.github.io/visualizing-git/#free-remote[Visualizing Git].
+
+Podemos deshacer/rehacer comandos con `undo`/`redo` y
+ver los comandos disponibles con `help`.
+
+== Ejercicio número 3
+
+Trabajamos por parejas.
+
+. Uno de nosotros crea un repositorio online,
+añade los ficheros de la carpeta `base`
+y crea un primer commit.
+La otra persona hace un fork del respositorio creado.
+
+. La persona que hizo el fork añade una nueva versión del archivo `doc.tex`
+que se encuentra en la carpeta `commitv1` y hace un nuevo commit.
+
+. La persona que hizo el fork sube sus cambios a su repositorio y desde él,
+hace un pull request para el repositorio original.
+(Como este pull request se basa en la versión actual del repositorio,
+se podría incorporar sin problemas, pero no vamos a hacerlo.)
+
+. La persona que creó el repositorio añade una nueva versión del archivo `doc.tex`
+que se encuentra en la carpeta `commitv2` y hace un nuevo commit.
+
+. La persona que creó el repositorio sube su nuevo commit,
+que está en conflicto con el pull request que se ha hecho.
+
+. Continuamos el seminario viendo cómo resolver el conflicto
 
